@@ -1,0 +1,18 @@
+MyCompiler/
+│
+├── lexer/              # Lexical analyzer
+│   └── lexer.py        # or lexer.l (Flex)
+│
+├── parser/             # Syntax analyzer
+│   └── parser.py       # or parser.y (Yacc/Bison)
+│
+├── semantics/
+│   └── semantic_checker.py
+│
+├── ir/
+│   └── ir_generator.py
+│
+├── examples/
+│   └── sample.my       # Sample source code in your language
+│
+└── main.py             # Main driver to call lexer → parser → IR

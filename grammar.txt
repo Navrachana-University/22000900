@@ -1,0 +1,15 @@
+<program>       ::= <stmt_list>
+<stmt_list>     ::= <stmt> <stmt_list> | ε
+<stmt>          ::= <decl_stmt> | <assign_stmt> | <if_stmt> | <while_stmt> | <print_stmt>
+<decl_stmt>     ::= 'int' ID ';'
+<assign_stmt>   ::= ID '=' <expr> ';'
+<if_stmt>       ::= 'if' '(' <cond> ')' '{' <stmt_list> '}'
+<while_stmt>    ::= 'while' '(' <cond> ')' '{' <stmt_list> '}'
+<print_stmt>    ::= 'print' '(' ID ')'
+<cond>          ::= <expr> <relop> <expr>
+<relop>         ::= '>' | '<' | '==' | '>=' | '<='
+<expr>          ::= <term> <expr_tail>
+<expr_tail>     ::= '+' <term> <expr_tail> | '-' <term> <expr_tail> | ε
+<term>          ::= <factor> <term_tail>
+<term_tail>     ::= '*' <factor> <term_tail> | '/' <factor> <term_tail> | ε
+<factor>        ::= ID | NUM | '(' <expr> ')'
