@@ -4,5 +4,5 @@
 MiniLang is a simple, C-inspired programming language designed for learning and demonstrating compiler construction concepts. This project implements a full compiler in Python that performs lexical analysis, parsing, semantic checks, and generates three-address intermediate code (TAC) for a custom high-level language.
 Built completely from scratch using pure Python — without Lex/Yacc or other parsing tools — this project showcases how real compilers work internally.
 
-**Key Features : **
+**Features:**
 MiniLang is built with a custom-designed language syntax that is intentionally not identical to C or Python, ensuring originality and educational value. The entire compiler is implemented manually in Python without relying on parser generators like Lex or Yacc. It includes a regex-based lexer, a recursive-descent parser, a semantic analyzer with symbol table management and error checking, and an intermediate code generator that outputs three-address code (TAC). The language supports essential constructs such as integer type declarations, arithmetic expressions (+, -, *, /), control flow statements including if, if-else, while, and for loops, and output via print() statements. This feature set makes MiniLang a minimal yet powerful platform for understanding core compiler design principles.
